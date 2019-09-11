@@ -3,10 +3,10 @@
 #
 
 # Builtin aliases
-alias ll='ls -l'
+alias ll='ls -lahtr'
 alias la='ls -a'
 alias lla='ls -al'
-
+alias cl='clear'
 # Some cd aliases
 alias back='cd -'
 
@@ -29,7 +29,7 @@ alias -g T=' | tail -20'
 alias -g NUL=' > /dev/null 2>&1'
 
 # I like to be safe...
-alias rm='rm -i'
+# alias rm='rm -i'
 
 # derp derp
 alias mkdirp='mkdir -p'
@@ -120,12 +120,5 @@ elif [[ $CURRENT_OS == 'Linux' ]]; then
 
         # Hahah, that's what it looks like to me
         alias yogurt='yaourt'
-    elif [[ $USER == 'davisjos' ]]; then
-        export ECLIPSE_HOME=/opt/eclipse/
-        alias eclimd=$ECLIPSE_HOME/eclimd
-        alias eclimd-rhel='$ECLIPSE_HOME/eclimd -Dosgi.instance.area.default=@user.home/Programming/RHEL/workspace'
-        alias eclimd-samples='$ECLIPSE_HOME/eclimd -Dosgi.instance.area.default=@user.home/Programming/Samples'
     fi
-elif [[ $CURRENT_OS == 'Cygwin' ]]; then
-    alias py='/cygdrive/c/Python27/python'
 fi

@@ -14,7 +14,6 @@ source $SOURCE/lib/theme-and-appearance.zsh
 
 # Aliases
 source $SOURCE/aliases/aliases.zsh
-source $SOURCE/aliases/latex.zsh
 
 # Custom things
 source $SOURCE/custom/load.zsh
