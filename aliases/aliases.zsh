@@ -3,9 +3,9 @@
 #
 
 # Builtin aliases
-alias ll='ls -lahtr'
+alias ll='ls -lhtr'
 alias la='ls -a'
-alias lla='ls -al'
+alias lla='ls -alhtr'
 alias cl='clear'
 # Some cd aliases
 alias back='cd -'
@@ -105,20 +105,4 @@ elif [[ $CURRENT_OS == 'Linux' ]]; then
     alias -s hs=$EDITOR
     alias -s c=$EDITOR
 
-    #
-    # User Specific Aliases
-    #
-
-    if [[ $USER == 'davis' ]]; then
-        # Monitors
-        # Moved to a separate script in ~/Scripts
-        # alias vga='xrandr --output CRT1 --same-as LCD --auto'
-        # alias dual-monitors='xrandr --output CRT1 --right-of LCD --mode 1660x1050'
-
-        # Music Collection
-        alias music-update='chmod -R a+X /home/davis/Music/Artists'
-
-        # Hahah, that's what it looks like to me
-        alias yogurt='yaourt'
-    fi
 fi
